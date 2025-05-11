@@ -36,7 +36,6 @@ app.use((req, res, next) => {
 
   // Handle preflight OPTIONS requests
   if (req.method === "OPTIONS") {
-    console.log("Handling OPTIONS request:", req.headers);
     return res.status(204).end();
   }
 
